@@ -1,0 +1,86 @@
+.player__container {
+    text-align: center;
+    color: azure;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.song__name {
+    color: #FF5403;
+}
+
+.artist__name {
+    color: #FF5403;
+}
+
+.sound__img {
+    transform: rotateY(180deg);
+    transform: rotate(-130deg);
+    position: absolute;
+    left: -1.5rem;
+    top: -2rem;
+}
+
+.sound__img img {
+    width: 15vh;
+}
+
+.side_icons {
+    color: #FF5403;
+    height: 40px;
+    width: 40px;
+}
+
+.side_icons:hover {
+    color: #A149FA;
+    cursor: pointer;
+}
+
+.general_icons {
+    color: #FF5403; 
+    height: 60px;
+    width: 60px;
+}
+
+.general_icons:hover {
+    color: #A149FA;
+    cursor: pointer;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+
+    .player__container {
+        padding: 5px;
+    }
+    
+    .sound__img {
+        left: -1.5rem;
+        top: -2rem;
+    }
+    
+    .sound__img img {
+        width: 10vh;
+    }
+
+    .side_icons {
+        height: 20px;
+        width: 20px;
+    }
+    
+    
+    .general_icons {
+        height: 35px;
+        width: 35px;
+    }
+} 
+

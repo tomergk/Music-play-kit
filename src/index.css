@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        45deg,
+        #FF5403,
+        #2D2727
+    );
+}
+
+.general_container {
+    display: flex;
+}
+
+.container {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 85vh;
+    max-height: 85vh;
+    border: 0.5vh solid black;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
+@media screen and (max-width: 1024px){
+
+    .general_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        min-width: 50%;
+        max-width: 50%;
+        min-height: 85vh;
+        max-height: 85vh;
+        border: 0.5vh solid black;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+@media screen and (max-width: 600px) {
+
+    .general_container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .container {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 40vh;
+        max-height: 40vh;
+        border: 0.5vh solid black;
+    }
+}
+

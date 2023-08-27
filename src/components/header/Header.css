@@ -1,0 +1,30 @@
+.header_container {
+background: linear-gradient(
+    0deg,
+    #FF5403
+);
+    margin: 0;
+    padding: 1vh 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.brand {
+    width: 12vh;
+    margin-left: 1vh;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+
+} 
+

@@ -1,0 +1,95 @@
+.instrumentals_container {
+  background-image: url('../../assets/images/drums.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w {
+  background-image: url("../../assets/images/Musical-Instruments/tom1.png"); 
+}
+  
+.a {
+  background-image: url("../../assets/images/Musical-Instruments/tom2.png");
+}
+  
+.s {
+  background-image: url("../../assets/images/Musical-Instruments/tom3.png");
+}
+  
+.d {
+  background-image: url("../../assets/images/Musical-Instruments/tom4.png");
+}
+  
+.j {
+  background-image: url("../../assets/images/Musical-Instruments/snare.png");
+}
+  
+.k {
+  background-image: url("../../assets/images/Musical-Instruments/kick.png");
+}
+  
+.l {
+  background-image: url("../../assets/images/Musical-Instruments/crash.png");
+}
+  
+.set {
+  height: 30vh;
+}
+
+.drum {
+  position: relative; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+  width: 6vw;
+  height: 13vh;
+  background-color: transparent;
+  font-family: "Arvo", cursive;
+  color: transparent;
+}
+
+.drum::before {
+  content: attr(id);
+  position: absolute;
+  top: -1.5rem; 
+  left: 50%;
+  color: #FF5403;
+  font-size: 2.5rem;
+  transform: translate(-50%, -100%);
+}
+
+.pressed {
+  opacity: 0.5;
+}
+
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+
+  .set {
+    height: 0vh;
+  }
+  
+  .drum {
+    width: 13vw;
+    height: 13vh;
+  }
+  
+  .drum::before {
+    top: -1.5rem; 
+    font-size: 1.5rem;
+  }
+
+} 
+

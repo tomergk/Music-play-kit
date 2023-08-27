@@ -1,0 +1,99 @@
+#music {
+    background-image: url('../../assets/images/1234.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.app__player__container {
+    width: 30vw;
+    height: 55vh;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2D2727;
+    border-radius: 4rem;
+    -moz-border-radius: 103px 103px 103px 103px;
+    -webkit-border-radius: 103px 103px 103px 103px;
+    border: 3px solid transparent;
+    border-color: #FF5403;
+    margin: 5vh auto;
+}
+
+.speakers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.speaker-img2 {
+    transform: rotateY(180deg);
+}
+
+.song__name__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.artist__name__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.control__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 27vh;
+}
+
+
+
+
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+    .app__player__container {
+        width: 50%;
+        height: 70%;
+        margin: 5vh auto;
+    }
+
+    .speakers {
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .song__name__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: 0.8vh;
+    }
+    
+    .artist__name__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+        font-size: 2vh;
+    }
+    
+    .control__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-top: 13vh;
+    }
+} 
