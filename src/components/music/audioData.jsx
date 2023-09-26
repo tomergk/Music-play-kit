@@ -1,6 +1,12 @@
 
 export const audios = [
     {
+        name: 'Sinner',
+        artist: 'Aaron Lewis',
+        music: require('../../assets/audio/songs/Aaron Lewis - Sinner.mp3'),
+        background: require('../../assets/images/songs-image/Sinner.jpg')
+    },
+    {
         name: 'Away in paradise',
         artist: '2Pac & Bob Marley',
         music: require('../../assets/audio/songs/2Pac Bob Marley - Away in paradise.mp3'),
