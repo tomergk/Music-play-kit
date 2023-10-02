@@ -26,7 +26,7 @@ const Instrumentals = () => {
     }, []);
 
     return (
-        <div className="container instrumentals_container">
+        <div className="instrumentals_container">
             <div className="set">
                 <button id='Q' className="drum q">Q</button>
                 <button id='W' className="drum w">W</button>

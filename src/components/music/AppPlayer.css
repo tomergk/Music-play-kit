@@ -120,7 +120,7 @@ input[type=range]::-webkit-slider-thumb {
     }
     
     .volume-control {
-        padding-bottom: 6rem;
+        margin-bottom: 6rem;
         left: 3.5rem;
     }
       
@@ -132,7 +132,10 @@ input[type=range]::-webkit-slider-thumb {
 @media screen and (max-width: 600px) {
 
     .names {
-        margin: 6rem auto -3rem auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+        top: 0;
         gap: 0rem;
     }
       
@@ -141,20 +144,22 @@ input[type=range]::-webkit-slider-thumb {
     }
       
     .app__player__container {
-        width: 90%;
-        height: 40%;
+        width: 150%;
+        height: 30%;
         margin-top: 5rem;
+        margin-left: 25%;
     }
     
     .control__icons {
         gap: 5px;
-        margin-top: 25vh;
+        margin-top: 16vh;
+        height: 4rem;
         padding: 20px;
     }
     
     .volume-control {
-        left: 1.5rem;
-        padding-top: 2.5rem;
+        left: 4rem;
+        margin-top: 3.5rem;
     }
     
     .volume {

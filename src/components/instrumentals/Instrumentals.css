@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
+  width: 50%;
 }
 
 .q {
@@ -88,7 +89,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   overflow: hidden;
   border: 5px solid #141E46;
 
@@ -154,11 +155,47 @@
 
 @media screen and (max-width: 600px) {
 
+  .instrumentals_container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 17rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .set {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr);
+    overflow: hidden;
+    border: 5px solid #141E46;
+  
+    -webkit-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+  
+    background: linear-gradient(
+      45deg,
+      #040D12,
+      #9D76C1,
+      #5B0888
+  ); 
+  width: 100%;  
+  }
+
   .drum {
+    position: relative;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     border: 1px solid black;
-    width: 7vw;
-    height: 10vh;
+    width: 100%;
+    max-height: fit-content;
   }
   
   .drum::before {
