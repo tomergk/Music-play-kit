@@ -1,45 +1,36 @@
-#music {
-    background-image: url('../../assets/images/1234.jfif');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.app__player__container {
-    width: 30vw;
-    height: 55vh;
+.names {
+    margin: 3rem auto 4rem auto;
+    display: grid;
     text-align: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+    gap: 2rem;
+    font-family: "Arvo", cursive;
+    width: max-content;
+}
+  
+.song__name {
+    color: #5B0888;
+    font-size: 5vh;
+}
+  
+.artist__name {
+    color: #9400FF;
+    font-size: 2.5vh;
+}
+  
+.app__player__container {
+    width: 65%;
+    background-size: 100% 80%;
     background-repeat: no-repeat;
-    background-color: #2D2727;
-    border-radius: 4rem;
-    -moz-border-radius: 103px 103px 103px 103px;
     -webkit-border-radius: 103px 103px 103px 103px;
-    border: 3px solid transparent;
-    border-color: #FF5403;
-    margin: 5vh auto;
+    border: 5px solid #141E46;
+    margin: auto;
+    -webkit-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
 }
 
-.speakers {
-    display: flex;
-    justify-content: space-between;
-}
-
-.speaker-img2 {
-    transform: rotateY(180deg);
-}
-
-.song__name__container {
-    display: flex;
-    justify-content: center;
-    margin-top: 3.5rem;
-}
-
-.artist__name__container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+.player__container {
+    -webkit-border-radius: 0px 0px 170px 170px;
 }
 
 .control__icons {
@@ -47,53 +38,152 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 27vh;
+    margin-top: 34vh;
+    -webkit-border-radius: 0px 0px 100px 100px;
+    background: #900C3F;
+    padding: 20px;
+    border-top: 5px solid #141E46;
+    -webkit-box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
+}
+
+.volume-control {
+    position: absolute;
+    left: 12rem;
+    display: flex;
+    align-items: center;
+}
+
+.volume {
+    font-size: 1.8rem;
 }
 
 
+input[type=range] {
+    width: 6rem;
+    margin-left: 0.4rem;
+    appearance: none; /* Removs default styles on other browsers */
+}
+  
+input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    cursor: pointer;
+    background: #FFE79B;
+}
 
+input[type=range]::-webkit-slider-thumb {
+    appearance: none; /* Removs default styles on other browsers */
+    cursor: pointer;
+    margin-top: -3px;
+    width: 20px; 
+    height: 20px;
+    background: #322653;
+    border-radius: 50%; 
+} 
 
+.side_icons {
+    color: #272829;
+    height: 40px;
+    width: 40px;
+}
+  
+.side_icons:hover {
+    color: #97FFF4;
+    cursor: pointer;
+}
+  
+.general_icons {
+    color: #272829;
+    height: 60px;
+    width: 60px;
+}
+  
+.general_icons:hover {
+    color: #97FFF4;
+    cursor: pointer;
+}
+  
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
 
 @media screen and (max-width: 1024px){
 
+    .app__player__container {
+        width: 85%;
+    }
+
+    .control__icons {
+        gap: 0px;
+        padding: 20px;
+        padding-top: 3rem;
+    }
+    
+    .volume-control {
+        padding-bottom: 6rem;
+        left: 3.5rem;
+    }
+      
 }
 
 
 /* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
 
 @media screen and (max-width: 600px) {
-    .app__player__container {
-        width: 50%;
-        height: 70%;
-        margin: 5vh auto;
-    }
 
-    .speakers {
-        display: none;
-        justify-content: space-between;
+    .names {
+        margin: 6rem auto -3rem auto;
+        gap: 0rem;
     }
-    
-    .song__name__container {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        font-size: 0.8vh;
+      
+    .song__name {
+        font-size: 5vh;
     }
-    
-    .artist__name__container {
-        display: flex;
-        justify-content: center;
-        margin-top: 0.5rem;
-        font-size: 2vh;
+      
+    .app__player__container {
+        width: 90%;
+        height: 40%;
+        margin-top: 5rem;
     }
     
     .control__icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7px;
-        margin-top: 13vh;
+        gap: 5px;
+        margin-top: 25vh;
+        padding: 20px;
+    }
+    
+    .volume-control {
+        left: 1.5rem;
+        padding-top: 2.5rem;
+    }
+    
+    .volume {
+        font-size: 1rem;
+    }
+
+    input[type=range] {
+        width: 3rem;
+        margin-left: 0.4rem;
+    }
+      
+    input[type=range]::-webkit-slider-runnable-track {
+        height: 5px;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -2px;
+        width: 10px; 
+        height: 10px;
+        border-radius: 50%; 
+    } 
+    
+    .side_icons {
+        height: 30px;
+        width: 30px;
+    }
+      
+    .general_icons {
+        height: 40px;
+        width: 40px;
     }
 } 

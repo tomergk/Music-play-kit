@@ -28,13 +28,27 @@ const Instrumentals = () => {
     return (
         <div className="container instrumentals_container">
             <div className="set">
+                <button id='Q' className="drum q">Q</button>
                 <button id='W' className="drum w">W</button>
+                <button id='E' className="drum e">E</button>
+                <button id='R' className="drum r">R</button>
+                <button id='T' className="drum t">T</button>
+                <button id='Y' className="drum y">Y</button>
+
                 <button id='A' className="drum a">A</button>
                 <button id='S' className="drum s">S</button>
                 <button id='D' className="drum d">D</button>
-                <button id='J' className="drum j">J</button>
-                <button id='K' className="drum k">K</button>
-                <button id='L' className="drum l">L</button>
+                <button id='F' className="drum f">F</button>
+                <button id='G' className="drum g">G</button>
+                <button id='H' className="drum h">H</button>
+
+                <button id='Z' className="drum z">Z</button>
+                <button id='X' className="drum x">X</button>
+                <button id='C' className="drum c">C</button>
+                <button id='V' className="drum v">V</button>
+                <button id='B' className="drum b">B</button>
+                <button id='N' className="drum n">N</button>
+
             </div>
         </div>
     );

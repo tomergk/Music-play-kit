@@ -6,11 +6,11 @@ import Footer from "./components/footer/Footer"
 
 const App = () => {
   return (
-    <div>
+    <div className='page'>
       <Header />
       <div className='general_container'>
-      <AppPlayer />
-      <Instrumentals />
+        <AppPlayer />
+        <Instrumentals />
       </div>
       <Footer />
     </div>

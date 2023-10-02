@@ -1,64 +1,132 @@
 .instrumentals_container {
-  background-image: url('../../assets/images/drums.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
+}
+
+.q {
+  background-image: url("../../assets/images/Musical-Instruments/guitar/bass_guitar.png");
 }
 
 .w {
-  background-image: url("../../assets/images/Musical-Instruments/tom1.png"); 
+  background-image: url("../../assets/images/Musical-Instruments/guitar/classic_guitar.png");
 }
-  
+
+.e {
+  background-image: url("../../assets/images/Musical-Instruments/guitar/guitar1.png");
+}
+
+.r {
+  background-image: url("../../assets/images/Musical-Instruments/guitar/guitar2.png");
+}
+
+.t {
+  background-image: url("../../assets/images/Musical-Instruments/guitar/guitar3.png");
+}
+
+.y {
+  background-image: url("../../assets/images/Musical-Instruments/guitar/guitar4.png");
+}
+
+
+
+
 .a {
-  background-image: url("../../assets/images/Musical-Instruments/tom2.png");
+  background-image: url("../../assets/images/Musical-Instruments/drum/tom1.png"); 
 }
   
 .s {
-  background-image: url("../../assets/images/Musical-Instruments/tom3.png");
+  background-image: url("../../assets/images/Musical-Instruments/drum/tom2.png");
 }
-  
+ 
 .d {
-  background-image: url("../../assets/images/Musical-Instruments/tom4.png");
+  background-image: url("../../assets/images/Musical-Instruments/drum/tom4.png");
+}
+
+.f {
+  background-image: url("../../assets/images/Musical-Instruments/drum/tom3.png");
 }
   
-.j {
-  background-image: url("../../assets/images/Musical-Instruments/snare.png");
+.g {
+  background-image: url("../../assets/images/Musical-Instruments/drum/snare.png");
 }
   
-.k {
-  background-image: url("../../assets/images/Musical-Instruments/kick.png");
+.h {
+  background-image: url("../../assets/images/Musical-Instruments/drum/kick.png");
 }
+
+
   
-.l {
-  background-image: url("../../assets/images/Musical-Instruments/crash.png");
+
+.z {
+  background-image: url("../../assets/images/Musical-Instruments/drum/crash.png");
 }
-  
+
+.x {
+  background-image: url("../../assets/images/Musical-Instruments/lazer.png");
+}
+
+.c {
+  background-image: url("../../assets/images/Musical-Instruments/clap.png");
+}
+
+.v {
+  background-image: url("../../assets/images/Musical-Instruments/reverse.png");
+}
+
+.b {
+  background-image: url("../../assets/images/Musical-Instruments/violin.png");
+}
+
+.n {
+  background-image: url("../../assets/images/Musical-Instruments/fart.png");
+}
+ 
+
 .set {
-  height: 30vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  border: 5px solid #141E46;
+
+  -webkit-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
+
+  background: linear-gradient(
+    45deg,
+    #040D12,
+    #9D76C1,
+    #5B0888
+); 
 }
 
 .drum {
-  position: relative; 
-  background-size: 100%;
-  background-repeat: no-repeat;
-  border: none;
-  width: 6vw;
-  height: 13vh;
+  position: relative;
   background-color: transparent;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 7vw;
+  height: 14vh;
   font-family: "Arvo", cursive;
   color: transparent;
+  border: 3px solid black;
 }
 
 .drum::before {
   content: attr(id);
+  color: #8DDFCB;
+  font-size: 2rem;
   position: absolute;
-  top: -1.5rem; 
-  left: 50%;
-  color: #FF5403;
-  font-size: 2.5rem;
-  transform: translate(-50%, -100%);
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  line-height: 1;
 }
 
 .pressed {
@@ -69,6 +137,15 @@
 /* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
 
 @media screen and (max-width: 1024px){
+  
+  .drum {
+    background-size: 100%;
+    border: 1px solid black;
+  }
+  
+  .drum::before {
+    font-size: 0rem;
+  }
 
 }
 
@@ -77,18 +154,15 @@
 
 @media screen and (max-width: 600px) {
 
-  .set {
-    height: 0vh;
-  }
-  
   .drum {
-    width: 13vw;
-    height: 13vh;
+    background-size: 100%;
+    border: 1px solid black;
+    width: 7vw;
+    height: 10vh;
   }
   
   .drum::before {
-    top: -1.5rem; 
-    font-size: 1.5rem;
+    font-size: 0rem;
   }
 
 } 
