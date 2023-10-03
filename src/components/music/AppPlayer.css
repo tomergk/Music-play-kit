@@ -2,19 +2,19 @@
     margin: 3rem auto 4rem auto;
     display: grid;
     text-align: center;
-    gap: 2rem;
+    gap: 20%; /*2rem*/
     font-family: "Arvo", cursive;
     width: max-content;
 }
   
 .song__name {
     color: #5B0888;
-    font-size: 5vh;
+    font-size: 300%; /*5vh*/
 }
   
 .artist__name {
-    color: #9400FF;
-    font-size: 2.5vh;
+    color: #9400FF; 
+    font-size: 150%; /*2.5vh*/ 
 }
   
 .app__player__container {
@@ -22,7 +22,7 @@
     background-size: 100% 80%;
     background-repeat: no-repeat;
     -webkit-border-radius: 103px 103px 103px 103px;
-    border: 5px solid #141E46;
+    border: 5px solid #141E46; 
     margin: auto;
     -webkit-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
@@ -50,19 +50,19 @@
 
 .volume-control {
     position: absolute;
-    left: 12rem;
+    left: 10%; /*12rem*/ 
     display: flex;
     align-items: center;
 }
 
 .volume {
-    font-size: 1.8rem;
+    font-size: 200%; /*1.8rem*/
 }
 
 
 input[type=range] {
-    width: 6rem;
-    margin-left: 0.4rem;
+    width: 60%; /*6rem*/
+    margin-left: 6%; /*0.4rem*/
     appearance: none; /* Removs default styles on other browsers */
 }
   
@@ -135,7 +135,7 @@ input[type=range]::-webkit-slider-thumb {
         position: absolute;
         left: 50%;
         transform: translateX(-50%); 
-        top: 0;
+        top: 5%;
         gap: 0rem;
     }
       
@@ -146,7 +146,7 @@ input[type=range]::-webkit-slider-thumb {
     .app__player__container {
         width: 150%;
         height: 30%;
-        margin-top: 5rem;
+        margin-top: 9rem;
         margin-left: 25%;
     }
     
