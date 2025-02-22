@@ -6,13 +6,14 @@
         #573B6E,
         #6F4A6B
     );
+    padding:0.8rem;
 }
 
 .footer_container p{
     font-size: 2vh;
-    color:aqua;
-    font-weight: bolder;
-    padding: 2vh 0;
+    background: linear-gradient(to left, #eac965, #f7b900, #ffc20b);
+    -webkit-background-clip: text; 
+    color: transparent;
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES (Tablets)) =============*/
@@ -20,6 +21,5 @@
 @media screen and (max-width: 1024px){
     .footer_container p{
         font-size: 1.9vh;
-        padding: 2vh 0;
     }
 }

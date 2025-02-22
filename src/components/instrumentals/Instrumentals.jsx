@@ -48,7 +48,6 @@ const Instrumentals = () => {
                 <button id='V' className="drum v">V</button>
                 <button id='B' className="drum b">B</button>
                 <button id='N' className="drum n">N</button>
-
             </div>
         </div>
     );

@@ -34,3 +34,11 @@ body {
 .container {
     width: 50%;
 }
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+    .general_container {
+        min-height: 84.4vh;
+    }
+}

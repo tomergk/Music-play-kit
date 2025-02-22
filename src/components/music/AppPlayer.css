@@ -2,19 +2,19 @@
     margin: 3rem auto 4rem auto;
     display: grid;
     text-align: center;
-    gap: 20%; /*2rem*/
+    gap: 20%;
     font-family: "Arvo", cursive;
     width: max-content;
 }
   
 .song__name {
     color: #5B0888;
-    font-size: 300%; /*5vh*/
+    font-size: 300%;
 }
   
 .artist__name {
     color: #9400FF; 
-    font-size: 150%; /*2.5vh*/ 
+    font-size: 150%;
 }
   
 .app__player__container {
@@ -24,9 +24,6 @@
     -webkit-border-radius: 103px 103px 103px 103px;
     border: 5px solid #141E46; 
     margin: auto;
-    -webkit-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: -10px -12px 5px 0px rgba(0,0,0,0.75);
 }
 
 .player__container {
@@ -40,29 +37,27 @@
     gap: 15px;
     margin-top: 34vh;
     -webkit-border-radius: 0px 0px 100px 100px;
-    background: #900C3F;
+    background: linear-gradient(to left, #eac965, #f7b900, #ffc20b);
     padding: 20px;
     border-top: 5px solid #141E46;
-    -webkit-box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
-    box-shadow: -11px -9px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 11px 90px 15px -20px rgba(0,0,0,0.75);
 }
 
 .volume-control {
     position: absolute;
-    left: 10%; /*12rem*/ 
+    left: 10%; 
     display: flex;
     align-items: center;
 }
 
 .volume {
-    font-size: 200%; /*1.8rem*/
+    font-size: 200%; 
 }
 
 
 input[type=range] {
-    width: 60%; /*6rem*/
-    margin-left: 6%; /*0.4rem*/
+    width: 60%; 
+    margin-left: 6%; 
     appearance: none; /* Removs default styles on other browsers */
 }
   
@@ -89,7 +84,7 @@ input[type=range]::-webkit-slider-thumb {
 }
   
 .side_icons:hover {
-    color: #97FFF4;
+    color: #9400FF;
     cursor: pointer;
 }
   
@@ -100,7 +95,7 @@ input[type=range]::-webkit-slider-thumb {
 }
   
 .general_icons:hover {
-    color: #97FFF4;
+    color: #9400FF;
     cursor: pointer;
 }
   
@@ -148,6 +143,8 @@ input[type=range]::-webkit-slider-thumb {
         height: 30%;
         margin-top: 9rem;
         margin-left: 25%;
+
+        box-shadow: 0 20px 15px 1px rgba(0,0,0,0.75);
     }
     
     .control__icons {

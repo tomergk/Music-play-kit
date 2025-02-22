@@ -9,6 +9,14 @@
 }
 
 .brand {
-    width: 17vh;
-    margin: 1vh;
+    width: 10vh;
+    padding: 1vh;
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES (Phones)) =============*/
+
+@media screen and (max-width: 600px) {
+    .brand {
+        width: 9vh;
+    }
 }
